@@ -31,17 +31,17 @@
 (condition "A.Type == 'track'"))
 
 # 4-layer , 1oz and 0.5oz copper
-#(rule "Minimum Trace Width and Spacing (outer layer)"
-#(constraint track_width (min 0.09mm))
-#(constraint clearance (min 0.09mm))
-#(layer outer)
-#(condition "A.Type == 'track'"))
+(rule "Minimum Trace Width and Spacing (outer layer)"
+(constraint track_width (min 0.09mm))
+(constraint clearance (min 0.09mm))
+(layer outer)
+(condition "A.Type == 'track'"))
 
-#(rule "Minimum Trace Width and Spacing (inner layer)"
-#(constraint track_width (min 0.1mm))
-#(constraint clearance (min 0.09mm))
-#(layer inner)
-#(condition "A.Type == 'track'"))
+(rule "Minimum Trace Width and Spacing (inner layer)"
+(constraint track_width (min 0.1mm))
+(constraint clearance (min 0.09mm))
+(layer inner)
+(condition "A.Type == 'track'"))
 
 # ------------------------------------------------------------------------------------------------------
 
@@ -58,10 +58,10 @@
 (condition "A.Type == 'via'"))
 
 # 4-layer standard
-#(rule "Minimum Via Diameter and Hole Size"
-#(constraint hole_size (min 0.3mm))
-#(constraint via_diameter (min 0.45mm))
-#(condition "A.Type == 'via'"))
+(rule "Minimum Via Diameter and Hole Size"
+(constraint hole_size (min 0.3mm))
+(constraint via_diameter (min 0.45mm))
+(condition "A.Type == 'via'"))
 
 # 4-layer advanced
 #(rule "Minimum Via Diameter and Hole Size"
